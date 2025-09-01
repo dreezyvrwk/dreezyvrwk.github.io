@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="meu_estilo.css">
@@ -25,12 +25,17 @@
 
     <main>
         <section id="sobre" class="bloco">
-            <h1>Sobre Mim</h1>
-            <p>Olá! Meu nome é Rafael Pereira Sommariva e sou um entusiasta de tecnologia e programação. Atualmente estou focado nos estudos de Análise e Desenvolvimento de Sistemas (ADS) pela UNINTER e sempre buscando aprender algo novo.</p>
-            <p>Nas minhas horas vagas, gosto de jogar jogos e assistir séries. Gosto de resolver problemas e acredito que um bom design pode fazer toda a diferença na experiência de um usuário.</p>
+            <div class="sobre-container">
+                <img src="images/jett1.jpg" alt="Fanart fofinha da Jett" class="foto-perfil">
+                <div class="sobre-texto">
+                    <h1>Sobre Mim</h1>
+                    <p>Olá! Meu nome é Rafael Pereira Sommariva e sou um entusiasta de tecnologia e programação. Atualmente estou focado nos estudos de Análise e Desenvolvimento de Sistemas (ADS) pela UNINTER e sempre buscando aprender algo novo.</p>
+                    <p>Nas minhas horas vagas, gosto de jogar jogos e assistir séries. Gosto de resolver problemas e acredito que um bom design pode fazer toda a diferença na experiência de um usuário.</p>
+                </div>
+            </div>
         </section>
 
-        <section id="formacao" class="bloco fundo-cinza">
+        <section id="formacao" class="bloco fundo-alternativo">
             <h2>Formação Acadêmica</h2>
             <h3>Educação</h3>
             <p><strong>Análise e Desenvolvimento de Sistemas</strong> - UNINTER (Em andamento)</p>
@@ -57,7 +62,7 @@
             </div>
         </section>
 
-        <section id="contato" class="bloco fundo-cinza">
+        <section id="contato" class="bloco fundo-alternativo">
             <h2>Olá, fale comigo</h2>
             <form class="formulario-contato">
                 <label for="nome">Seu nome:</label>
@@ -73,6 +78,7 @@
 
     <footer class="rodape">
         <p>feito por, rafael sommariva, 2025.</p>
+        <img src="images/jett2.jpg" alt="Retrato da Jett" class="imagem-rodape">
     </footer>
 
 </body>
