@@ -1,14 +1,24 @@
+/* Paleta de Cores do Projeto */
+:root {
+    --cor-principal: #922B21;     /* Vermelho escuro para títulos */
+    --cor-destaque: #E74C3C;      /* Vermelho vibrante para botões e detalhes */
+    --cor-fundo: #f4f4f4;         /* Fundo principal cinza claro */
+    --cor-fundo-alt: #fff;       /* Fundo alternativo branco */
+    --cor-texto: #333;           /* Cor principal do texto */
+    --cor-barra: #111;           /* Preto para header/footer */
+}
+
 body {
     margin: 0;
     padding: 0;
-    font-family: 'Roboto', sans-serif;
-    background-color: #f4f4f4; /* Fundo cinza claro */
-    color: #333; /* Texto escuro */
+    font-family: 'Roboto', Arial, sans-serif; /* Adicionado um fallback de fonte */
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
     line-height: 1.6;
 }
 
 .barra-navegacao {
-    background-color: #111; /* Barra de navegação preta */
+    background-color: var(--cor-barra);
     padding: 15px 0;
     position: fixed;
     width: 100%;
@@ -26,7 +36,7 @@ body {
 }
 
 .barra-navegacao a:hover {
-    color: #E74C3C; /* Vermelho para o hover */
+    color: var(--cor-destaque);
 }
 
 main {
@@ -40,15 +50,13 @@ main {
 .bloco h1, .bloco h2 {
     text-align: center;
     margin-bottom: 30px;
-    color: #922B21; /* Títulos em vermelho escuro */
+    color: var(--cor-principal);
 }
 
-/* Seções com fundo alternativo */
 .fundo-alternativo {
-    background-color: #fff; /* Fundo branco para contraste */
+    background-color: var(--cor-fundo-alt);
 }
 
-/* Seção Sobre Mim */
 .sobre-container {
     display: flex;
     align-items: center;
@@ -58,12 +66,11 @@ main {
 .foto-perfil {
     width: 180px;
     height: 180px;
-    border-radius: 15px; /* Bordas arredondadas para a imagem fofinha */
-    border: 3px solid #922B21; /* Borda em vermelho escuro */
+    border-radius: 15px;
+    border: 3px solid var(--cor-principal);
     object-fit: cover;
 }
 
-/* Seção de Projetos */
 .vitrine-projetos {
     display: flex;
     justify-content: center;
@@ -72,20 +79,19 @@ main {
 }
 
 .card-projeto {
-    background: #ffffff;
+    background: var(--cor-fundo-alt);
     padding: 25px;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     width: 280px;
-    transition: transform 0.2s;
-    border-left: 5px solid #E74C3C; /* Detalhe em vermelho no card */
+    transition: transform 0.3s ease; /* Transição mais suave */
+    border-left: 5px solid var(--cor-destaque);
 }
 
 .card-projeto:hover {
     transform: translateY(-5px);
 }
 
-/* Formulário de Contato */
 .formulario-contato {
     max-width: 500px;
     margin: 0 auto;
@@ -103,7 +109,7 @@ main {
 }
 
 .formulario-contato button {
-    background-color: #E74C3C; /* Botão em vermelho */
+    background-color: var(--cor-destaque);
     color: white;
     border: none;
     cursor: pointer;
@@ -111,21 +117,20 @@ main {
 }
 
 .formulario-contato button:hover {
-    background-color: #922B21; /* Botão fica vermelho escuro no hover */
+    background-color: var(--cor-principal);
 }
 
-/* Rodapé */
 .rodape {
     text-align: center;
     padding: 20px;
-    background-color: #111; /* Rodapé preto */
+    background-color: var(--cor-barra);
     color: white;
 }
 
 .imagem-rodape {
     width: 100px;
     height: 100px;
-    border-radius: 50%; /* Imagem do rodapé circular */
+    border-radius: 50%;
     margin-top: 15px;
-    border: 2px solid #E74C3C; /* Borda vermelha */
+    border: 2px solid var(--cor-destaque);
 }
