@@ -1,0 +1,136 @@
+/* Paleta de Cores do Projeto */
+:root {
+    --cor-principal: #922B21;     /* Vermelho escuro para títulos */
+    --cor-destaque: #E74C3C;      /* Vermelho vibrante para botões e detalhes */
+    --cor-fundo: #f4f4f4;         /* Fundo principal cinza claro */
+    --cor-fundo-alt: #fff;       /* Fundo alternativo branco */
+    --cor-texto: #333;           /* Cor principal do texto */
+    --cor-barra: #111;           /* Preto para header/footer */
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', Arial, sans-serif; /* Adicionado um fallback de fonte */
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+    line-height: 1.6;
+}
+
+.barra-navegacao {
+    background-color: var(--cor-barra);
+    padding: 15px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    z-index: 1000;
+}
+
+.barra-navegacao a {
+    color: white;
+    text-decoration: none;
+    margin: 0 20px;
+    font-weight: bold;
+}
+
+.barra-navegacao a:hover {
+    color: var(--cor-destaque);
+}
+
+main {
+    padding-top: 80px; 
+}
+
+.bloco {
+    padding: 50px 10%;
+}
+
+.bloco h1, .bloco h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: var(--cor-principal);
+}
+
+.fundo-alternativo {
+    background-color: var(--cor-fundo-alt);
+}
+
+.sobre-container {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.foto-perfil {
+    width: 180px;
+    height: 180px;
+    border-radius: 15px;
+    border: 3px solid var(--cor-principal);
+    object-fit: cover;
+}
+
+.vitrine-projetos {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.card-projeto {
+    background: var(--cor-fundo-alt);
+    padding: 25px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    width: 280px;
+    transition: transform 0.3s ease; /* Transição mais suave */
+    border-left: 5px solid var(--cor-destaque);
+}
+
+.card-projeto:hover {
+    transform: translateY(-5px);
+}
+
+.formulario-contato {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.formulario-contato input,
+.formulario-contato textarea,
+.formulario-contato button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; 
+}
+
+.formulario-contato button {
+    background-color: var(--cor-destaque);
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.formulario-contato button:hover {
+    background-color: var(--cor-principal);
+}
+
+.rodape {
+    text-align: center;
+    padding: 20px;
+    background-color: var(--cor-barra);
+    color: white;
+}
+
+.imagem-rodape {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-top: 15px;
+    border: 2px solid var(--cor-destaque);
+}
