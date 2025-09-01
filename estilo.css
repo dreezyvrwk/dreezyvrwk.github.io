@@ -1,17 +1,16 @@
-/* Paleta de Cores do Projeto */
 :root {
-    --cor-principal: #922B21;     /* Vermelho escuro para títulos */
-    --cor-destaque: #E74C3C;      /* Vermelho vibrante para botões e detalhes */
-    --cor-fundo: #f4f4f4;         /* Fundo principal cinza claro */
-    --cor-fundo-alt: #fff;       /* Fundo alternativo branco */
-    --cor-texto: #333;           /* Cor principal do texto */
-    --cor-barra: #111;           /* Preto para header/footer */
+    --cor-principal: #922B21;
+    --cor-destaque: #E74C3C;
+    --cor-fundo: #f4f4f4;
+    --cor-fundo-alt: #fff;
+    --cor-texto: #333;
+    --cor-barra: #111;
 }
 
 body {
     margin: 0;
     padding: 0;
-    font-family: 'Roboto', Arial, sans-serif; /* Adicionado um fallback de fonte */
+    font-family: 'Roboto', Arial, sans-serif;
     background-color: var(--cor-fundo);
     color: var(--cor-texto);
     line-height: 1.6;
@@ -25,6 +24,7 @@ body {
     top: 0;
     text-align: center;
     box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    /* Garante que o menu sempre fique sobre todos os outros elementos da página. */
     z-index: 1000;
 }
 
@@ -40,6 +40,7 @@ body {
 }
 
 main {
+    /* Compensa o espaço ocupado pelo menu de navegação que tem altura fixa. */
     padding-top: 80px; 
 }
 
@@ -84,7 +85,7 @@ main {
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     width: 280px;
-    transition: transform 0.3s ease; /* Transição mais suave */
+    transition: transform 0.3s ease;
     border-left: 5px solid var(--cor-destaque);
 }
 
@@ -105,6 +106,7 @@ main {
     margin-bottom: 15px;
     border: 1px solid #ccc;
     border-radius: 4px;
+    /* Altera o cálculo do tamanho da caixa para que padding e borda não aumentem a largura total. */
     box-sizing: border-box; 
 }
 
